@@ -56,6 +56,13 @@ A pushbutton is used to turn on and off the control, and an indicator is used to
 
 The project files for this board can be found in "\PCB Design\Temperature Controller".
 
+### STM Nucleo-64 Code
+
+The code used for the temperature controller can be found in "\Temperature Control Code\TemperatureController".
+
+## Component Selection and Calculations
+Most calculations were done using the TemperatureSensorValues.mlx file. 
+
 ## Assembly and Testing of boards
 
 ## Other components needed
