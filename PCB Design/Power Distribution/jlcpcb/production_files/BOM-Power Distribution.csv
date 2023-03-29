@@ -1,0 +1,20 @@
+Comment,Designator,Footprint,LCSC
+NCE30P30K,Q2,NCE30P30K P channel MOSFET,C130106
+100k,"R3,R5",R_0805_2012Metric,C149504
+10n,"C1,C2",C_0805_2012Metric,C1710
+1.8k,R6,R_0805_2012Metric,C17398
+10k,R2,R_0805_2012Metric,C17414
+330k,R1,R_0805_2012Metric,C17629
+82k,R4,R_0805_2012Metric,C17840
+Conn_01x02_Male,J7,2 Pin Male Header,C20079
+Switch Header Pin,J6,3 Pin Male Header,C20547
+4.7u,C4,C_1206_3216Metric,C29823
+Fuse,"F1,F2",FUSE Holder ROHS,C3131
+Barrel_Jack,"J3,J4,J5",DC Jack 5A,C388625
+100n,C3,C_0805_2012Metric,C49678
+D_Schottky,"D1,D2",Schottky Diode SK1010C,C65020
+2N7002,"Q1,Q3",SOT-23,C8545
+Barrel_Jack,"J1,J2",CONN-TH_XT60PW-M,C98732
+TestPoint,TP1,TestPoint_Plated_Hole_D2.0mm,
+TestPoint,TP2,TestPoint_Plated_Hole_D2.0mm,
+TestPoint,TP3,TestPoint_Plated_Hole_D2.0mm,

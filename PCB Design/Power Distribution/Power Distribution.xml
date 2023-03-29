@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\sarah\Documents\sea-ice-power-management\PCB Design\Power Distribution\Power Distribution.kicad_sch</source>
+    <date>2022/12/08 15:23:15</date>
+    <tool>Eeschema (6.0.8)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Power Distribution and Switching</title>
+        <company>University of Cape Town</company>
+        <rev>V0</rev>
+        <date>December 2022</date>
+        <source>Power Distribution.kicad_sch</source>
+        <comment number="1" value="Based off of design by Stanton (2022)"/>
+        <comment number="2" value="Author: Sarah Tallack"/>
+        <comment number="3" value="Project: Sea Ice Imaging"/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>10n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811151136_Samsung-Electro-Mechanics-CL21B103KBANNNC_C1710.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C1710</field>
+        <field name="Price">0.0062</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC No." value="C1710"/>
+      <property name="Price" value="0.0062"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8cd4d4fd-f8ff-4a35-bad1-73652076fdef</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>10n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811151136_Samsung-Electro-Mechanics-CL21B103KBANNNC_C1710.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C1710</field>
+        <field name="Price">0.0062</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC No." value="C1710"/>
+      <property name="Price" value="0.0062"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c69f0af7-80cb-4704-abf8-5e82d0e160bc</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810101813_YAGEO-CC0805KRX7R9BB104_C49678.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C49678</field>
+        <field name="Price">0.0036</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC No." value="C49678"/>
+      <property name="Price" value="0.0036"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fd6c9e20-75c1-4a57-9922-6e7e22240042</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>4.7u</value>
+      <footprint>Capacitor_SMD:C_1206_3216Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811091112_FH--Guangdong-Fenghua-Advanced-Tech-1206B475K500NT_C29823.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C29823</field>
+        <field name="Price">0.0091</field>
+      </fields>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <property name="LCSC No." value="C29823"/>
+      <property name="Price" value="0.0091"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>806de014-4939-489e-b68d-dea356d66ddd</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>D_Schottky</value>
+      <footprint>Footprints:Schottky Diode SK1010C</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2012211036_MDD-Microdiode-Electronics--SK1010C_C65020.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C65020</field>
+        <field name="Price">0.1616</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="LCSC No." value="C65020"/>
+      <property name="Price" value="0.1616"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>81ead25b-e4ee-43c5-898a-dc4d2f23f837</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>D_Schottky</value>
+      <footprint>Footprints:Schottky Diode SK1010C</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2012211036_MDD-Microdiode-Electronics--SK1010C_C65020.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C65020</field>
+        <field name="Price">0.1616</field>
+      </fields>
+      <libsource lib="Device" part="D_Schottky" description="Schottky diode"/>
+      <property name="LCSC No." value="C65020"/>
+      <property name="Price" value="0.1616"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f2eba435-9288-43dc-ab3b-6151df06a28d</tstamps>
+    </comp>
+    <comp ref="F1">
+      <value>Fuse</value>
+      <footprint>Footprints:FUSE Holder ROHS</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811061209_Xucheng-Elec-C3131_C3131.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C3131</field>
+        <field name="Price">0.0590</field>
+      </fields>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <property name="LCSC No." value="C3131"/>
+      <property name="Price" value="0.0590"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8e18d71e-f961-4844-8496-cdea8d8da00e</tstamps>
+    </comp>
+    <comp ref="F2">
+      <value>Fuse</value>
+      <footprint>Footprints:FUSE Holder ROHS</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811061209_Xucheng-Elec-C3131_C3131.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C3131</field>
+        <field name="Price">0.0590</field>
+      </fields>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <property name="LCSC No." value="C3131"/>
+      <property name="Price" value="0.0590"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fae934b3-6b64-4166-bb03-64a4803af25b</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Barrel_Jack</value>
+      <footprint>Footprints:CONN-TH_XT60PW-M</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810251313_Changzhou-Amass-Elec-XT60PW-M_C98732.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C98732</field>
+        <field name="Price">0.3915</field>
+      </fields>
+      <libsource lib="" part="Barrel_Jack_1" description="DC Barrel Jack"/>
+      <property name="LCSC No." value="C98732"/>
+      <property name="Price" value="0.3915"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>14c0854d-ba4d-45d8-9d6b-6967d65749a1</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>Barrel_Jack</value>
+      <footprint>Footprints:CONN-TH_XT60PW-M</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810251313_Changzhou-Amass-Elec-XT60PW-M_C98732.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C98732</field>
+        <field name="Price">0.3915</field>
+      </fields>
+      <libsource lib="" part="Barrel_Jack_1" description="DC Barrel Jack"/>
+      <property name="LCSC No." value="C98732"/>
+      <property name="Price" value="0.3915"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9149ee4e-b383-419a-8330-a0040c6c1a45</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>Barrel_Jack</value>
+      <footprint>Footprints:DC Jack 5A</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2110151730_XKB-Connectivity-DC-005-5A-3-0_C388625.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C388625</field>
+        <field name="Price">0.2379</field>
+      </fields>
+      <libsource lib="SarahLibrary" part="Barrel_Jack" description="DC Barrel Jack"/>
+      <property name="LCSC No." value="C388625"/>
+      <property name="Price" value="0.2379"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c3166573-48b1-4605-bd9d-8f60dd6b0a37</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>Barrel_Jack</value>
+      <footprint>Footprints:DC Jack 5A</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2110151730_XKB-Connectivity-DC-005-5A-3-0_C388625.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C388625</field>
+        <field name="Price">0.2379</field>
+      </fields>
+      <libsource lib="SarahLibrary" part="Barrel_Jack" description="DC Barrel Jack"/>
+      <property name="LCSC No." value="C388625"/>
+      <property name="Price" value="0.2379"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e29ec373-d7bf-422c-8a72-452c42a3f23d</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>Barrel_Jack</value>
+      <footprint>Footprints:DC Jack 5A</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2110151730_XKB-Connectivity-DC-005-5A-3-0_C388625.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C388625</field>
+        <field name="Price">0.2379</field>
+      </fields>
+      <libsource lib="SarahLibrary" part="Barrel_Jack" description="DC Barrel Jack"/>
+      <property name="LCSC No." value="C388625"/>
+      <property name="Price" value="0.2379"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4e2717ca-4a67-4061-a62c-acb116d6314e</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>Switch Header Pin</value>
+      <footprint>Footprints:3 Pin Male Header</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811021622_BOOMELE-Boom-Precision-Elec-VH-3A_C20547.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C20547</field>
+        <field name="Price">0.0303</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x03_Male" description="Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="LCSC No." value="C20547"/>
+      <property name="Price" value="0.0303"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>68e6ea43-7dc5-4f21-a65d-5651c93c424e</tstamps>
+    </comp>
+    <comp ref="J7">
+      <value>Conn_01x02_Male</value>
+      <footprint>Footprints:2 Pin Male Header</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132110_BOOMELE-Boom-Precision-Elec-XH-2A_C20079.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C20079</field>
+        <field name="Price">0.0058</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x02_Male" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="LCSC No." value="C20079"/>
+      <property name="Price" value="0.0058"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8f7e56de-867c-4471-9ffb-3917c868ca10</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810151612_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C8545</field>
+        <field name="Price">0.0149</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <property name="LCSC No." value="C8545"/>
+      <property name="Price" value="0.0149"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cf131d6d-785b-458a-ba5a-ea9651f330cb</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>NCE30P30K</value>
+      <footprint>Footprints:NCE30P30K P channel MOSFET</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811041601_Wuxi-NCE-Power-Semiconductor-NCE30P30K_C130106.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C130106</field>
+        <field name="Price">0.1349</field>
+      </fields>
+      <libsource lib="SarahLibrary" part="NCE30P30K" description=""/>
+      <property name="LCSC No." value="C130106"/>
+      <property name="Price" value="0.1349"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9862c911-575a-4cd0-b2c6-6f69a98232b4</tstamps>
+    </comp>
+    <comp ref="Q3">
+      <value>2N7002</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810151612_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C8545</field>
+        <field name="Price">0.0149</field>
+      </fields>
+      <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
+      <property name="LCSC No." value="C8545"/>
+      <property name="Price" value="0.0149"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5aabb208-46c9-4248-b697-ecb4ec0a3062</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>330k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2205311830_UNI-ROYAL-Uniroyal-Elec-0805W8F3303T5E_C17629.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C17629</field>
+        <field name="Price">0.0015</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC No." value="C17629"/>
+      <property name="Price" value="0.0015"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ba8f0594-f5ae-482d-a1f0-24535e0e7855</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2206010216_UNI-ROYAL-Uniroyal-Elec-0805W8F1002T5E_C17414.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C17414</field>
+        <field name="Price">0.0008</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC No." value="C17414"/>
+      <property name="Price" value="0.0008"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d5ab51f0-927d-465e-8b76-018a867ca5dc</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2205312316_UNI-ROYAL-Uniroyal-Elec-0805W8F1003T5E_C149504.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C149504</field>
+        <field name="Price">0.0016</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC No." value="C149504"/>
+      <property name="Price" value="0.0016"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>39d026ec-f56d-49f5-a011-665480ceeb9e</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>82k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2205311830_UNI-ROYAL-Uniroyal-Elec-0805W8F8202T5E_C17840.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C17840</field>
+        <field name="Price">0.0016</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC No." value="C17840"/>
+      <property name="Price" value="0.0016"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>75e30045-c773-405f-81e7-485cb33c58bf</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2205312316_UNI-ROYAL-Uniroyal-Elec-0805W8F1003T5E_C149504.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C149504</field>
+        <field name="Price">0.0016</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC No." value="C149504"/>
+      <property name="Price" value="0.0016"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0612e349-b8d4-4fc7-b73d-fe6d928489d2</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>1.8k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2206010216_UNI-ROYAL-Uniroyal-Elec-0805W8F1801T5E_C17398.pdf</datasheet>
+      <fields>
+        <field name="LCSC No.">C17398</field>
+        <field name="Price">0.0016</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC No." value="C17398"/>
+      <property name="Price" value="0.0016"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b8a4aefe-1b11-45c0-ba42-3926ed33b40f</tstamps>
+    </comp>
+    <comp ref="TP1">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Plated_Hole_D2.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6be72a4a-0022-4969-b59a-925fe07bff29</tstamps>
+    </comp>
+    <comp ref="TP2">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Plated_Hole_D2.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ca82966f-9e7e-47a3-9e5c-81a33ede1bf1</tstamps>
+    </comp>
+    <comp ref="TP3">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Plated_Hole_D2.0mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="File: Power Distribution.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a4e2e0d7-75f0-46a5-ada4-45e857e107fd</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="" part="Barrel_Jack_1">
+      <description>DC Barrel Jack</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>BarrelJack*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J1</field>
+        <field name="Value">Barrel_Jack</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="V-" type="passive"/>
+        <pin num="2" name="V+" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x02_Male">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02_Male</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x03_Male">
+      <description>Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03_Male</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Small">
+      <description>Unpolarized capacitor, small symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Fuse">
+      <description>Fuse</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*Fuse*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Fuse</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SarahLibrary" part="Barrel_Jack">
+      <description>DC Barrel Jack</description>
+      <docs>https://datasheet.lcsc.com/lcsc/2110151730_XKB-Connectivity-DC-005-5A-3-0_C388625.pdf</docs>
+      <footprints>
+        <fp>BarrelJack*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J2</field>
+        <field name="Value">Barrel_Jack</field>
+        <field name="Footprint">Footprints:DC Jack 5A</field>
+        <field name="Datasheet">https://datasheet.lcsc.com/lcsc/2110151730_XKB-Connectivity-DC-005-5A-3-0_C388625.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SarahLibrary" part="NCE30P30K">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">NCE30P30K</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="passive"/>
+        <pin num="2" name="D" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Transistor_FET" part="2N7002">
+      <description>0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23</description>
+      <docs>https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">2N7002</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23</field>
+        <field name="Datasheet">https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="SarahLibrary">
+      <uri>C:/Users/sarah/Documents/SeaIcePower/SarahLibrary.kicad_sym</uri>
+    </library>
+    <library logical="Transistor_FET">
+      <uri>C:\Program Files\KiCad\6.0\share\kicad\symbols\/Transistor_FET.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/AC{slash}DC output">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="F1" pin="1" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="V+" pintype="passive"/>
+    </net>
+    <net code="2" name="/Battery">
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="F2" pin="2" pintype="passive"/>
+      <node ref="J6" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="3" name="/Battery output">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="F2" pin="1" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="V+" pintype="passive"/>
+    </net>
+    <net code="4" name="/Mains">
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="F1" pin="2" pintype="passive"/>
+      <node ref="J6" pin="3" pinfunction="Pin_3" pintype="passive"/>
+    </net>
+    <net code="5" name="/Supply">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="Q2" pin="3" pinfunction="S" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="6" name="/Switch">
+      <node ref="J6" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="7" name="/Vout">
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="J3" pin="1" pintype="passive"/>
+      <node ref="J4" pin="1" pintype="passive"/>
+      <node ref="J5" pin="1" pintype="passive"/>
+      <node ref="J7" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="Q2" pin="2" pinfunction="D" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="8" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="V-" pintype="passive"/>
+      <node ref="J1" pin="3" pintype="passive"/>
+      <node ref="J1" pin="4" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="V-" pintype="passive"/>
+      <node ref="J2" pin="3" pintype="passive"/>
+      <node ref="J2" pin="4" pintype="passive"/>
+      <node ref="J3" pin="2" pintype="passive"/>
+      <node ref="J4" pin="2" pintype="passive"/>
+      <node ref="J5" pin="2" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q3" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="9" name="Net-(C3-Pad2)">
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="Q2" pin="1" pinfunction="G" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="10" name="Net-(J7-Pad2)">
+      <node ref="J7" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+    </net>
+    <net code="11" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="Q3" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="12" name="Net-(Q1-Pad3)">
+      <node ref="Q1" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="13" name="Net-(Q3-Pad3)">
+      <node ref="Q3" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+    </net>
+    <net code="14" name="unconnected-(J3-Pad3)">
+      <node ref="J3" pin="3" pintype="passive+no_connect"/>
+    </net>
+    <net code="15" name="unconnected-(J4-Pad3)">
+      <node ref="J4" pin="3" pintype="passive+no_connect"/>
+    </net>
+    <net code="16" name="unconnected-(J5-Pad3)">
+      <node ref="J5" pin="3" pintype="passive+no_connect"/>
+    </net>
+  </nets>
+</export>
