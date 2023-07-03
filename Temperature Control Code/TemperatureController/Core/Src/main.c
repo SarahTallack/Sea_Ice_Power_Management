@@ -17,7 +17,7 @@
   *
   * The temperature range is roughly - 23°C to 30°C. The following pins are used:
   * PB3: Button Input, which is programmed to an interrupt and power system on.
-  * PB50: LED Indicator, to show when the system is powered on.
+  * PB5: LED Indicator, to show when the system is powered on.
   * PC0: Temperature Reading, which is an ADC that gives a value related to temp.
   * PD2: Heater Control, GPIO UART_Print which is used to switch on power to external
   * 	 heaters.
@@ -56,8 +56,6 @@
 /* Private variables ---------------------------------------------------------*/
 ADC_HandleTypeDef hadc1;
 
-UART_HandleTypeDef huart2;
-
 /* USER CODE BEGIN PV */
 
 char print[25];			// array for printing via UART
@@ -74,7 +72,6 @@ uint32_t Temp_high = 25;
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_ADC1_Init(void);
-static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN PFP */
 uint32_t ADC_to_Volt(uint32_t ADC_val);
 int Volt_to_Temp(uint32_t Volt);
@@ -116,7 +113,6 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_ADC1_Init();
-  MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -135,17 +131,17 @@ int main(void)
 		HAL_ADC_Start(&hadc1);
 		HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
 		uint32_t ADC = HAL_ADC_GetValue(&hadc1);
-		//UART_Print(ADC, 0);
+		UART_Print(ADC, 0);
 
 		// Convert ADC value to voltage
 		Volt = ADC_to_Volt(ADC);
-		//UART_Print(Volt, 1);
+		UART_Print(Volt, 1);
 
 		// Convert voltage value to temperature
 		Temp = Volt_to_Temp(Volt);
-		//memset(print, 0, sizeof print);
-		//sprintf(print, "Temperature: %d\r\n", Temp);
-		//HAL_UART_Transmit(&huart2, print, sizeof(print), 1000);
+		memset(print, 0, sizeof print);
+		sprintf(print, "Temperature: %d\r\n", Temp);
+		HAL_UART_Transmit(&huart2, print, sizeof(print), 1000);
 
 		// Use temperature to control UART_Print
 		Control_Heater(Temp);
@@ -294,41 +290,6 @@ static void MX_ADC1_Init(void)
 }
 
 /**
-  * @brief USART2 Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_USART2_UART_Init(void)
-{
-
-  /* USER CODE BEGIN USART2_Init 0 */
-
-  /* USER CODE END USART2_Init 0 */
-
-  /* USER CODE BEGIN USART2_Init 1 */
-
-  /* USER CODE END USART2_Init 1 */
-  huart2.Instance = USART2;
-  huart2.Init.BaudRate = 115200;
-  huart2.Init.WordLength = UART_WORDLENGTH_8B;
-  huart2.Init.StopBits = UART_STOPBITS_1;
-  huart2.Init.Parity = UART_PARITY_NONE;
-  huart2.Init.Mode = UART_MODE_TX_RX;
-  huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart2.Init.OverSampling = UART_OVERSAMPLING_16;
-  huart2.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
-  huart2.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
-  if (HAL_UART_Init(&huart2) != HAL_OK)
-  {
-    Error_Handler();
-  }
-  /* USER CODE BEGIN USART2_Init 2 */
-
-  /* USER CODE END USART2_Init 2 */
-
-}
-
-/**
   * @brief GPIO Initialization Function
   * @param None
   * @retval None
@@ -343,6 +304,9 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(TempSensorControl_GPIO_Port, TempSensorControl_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
@@ -364,6 +328,13 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : TempSensorControl_Pin */
+  GPIO_InitStruct.Pin = TempSensorControl_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(TempSensorControl_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : LD2_Pin */
   GPIO_InitStruct.Pin = LD2_Pin;
@@ -393,9 +364,6 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(Indicator_GPIO_Port, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
-  HAL_NVIC_SetPriority(EXTI3_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(EXTI3_IRQn);
-
   HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 

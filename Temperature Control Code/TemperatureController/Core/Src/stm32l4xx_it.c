@@ -51,7 +51,7 @@
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-extern uint16_t tDelay;
+//extern uint16_t tDelay;
 extern uint8_t mode;
 /* USER CODE END 0 */
 
@@ -200,34 +200,6 @@ void SysTick_Handler(void)
 /******************************************************************************/
 
 /**
-  * @brief This function handles EXTI line3 interrupt.
-  */
-void EXTI3_IRQHandler(void)
-{
-  /* USER CODE BEGIN EXTI3_IRQn 0 */
-  uint8_t start = HAL_GetTick();
-  while((start+20)>HAL_GetTick());
-
-  if (mode == 0){
-	  mode = 1;
-	  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_5);
-  }
-  else if (mode == 1){
-	  mode = 0;
-	  // Turn off LED
-	  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_5);
-
-	  // Turn off heater
-	  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_2, GPIO_PIN_RESET);
-  }
-  /* USER CODE END EXTI3_IRQn 0 */
-  HAL_GPIO_EXTI_IRQHandler(ButtonInput_Pin);
-  /* USER CODE BEGIN EXTI3_IRQn 1 */
-
-  /* USER CODE END EXTI3_IRQn 1 */
-}
-
-/**
   * @brief This function handles ADC1 and ADC2 interrupts.
   */
 void ADC1_2_IRQHandler(void)
@@ -249,15 +221,15 @@ void EXTI15_10_IRQHandler(void)
   /* USER CODE BEGIN EXTI15_10_IRQn 0 */
   uint8_t start = HAL_GetTick();
   while((start+20)>HAL_GetTick());
-  if(B1_Pin)
-  {
-	  if (tDelay == 250){
-		  tDelay = 500;
-	  }
-	  else {
-		  tDelay = 250;
-	  }
-  }
+//  if(B1_Pin)
+//  {
+//	  if (tDelay == 250){
+//		  tDelay = 500;
+//	  }
+//	  else {
+//		  tDelay = 250;
+//	  }
+//  }
   /* USER CODE END EXTI15_10_IRQn 0 */
   HAL_GPIO_EXTI_IRQHandler(B1_Pin);
   /* USER CODE BEGIN EXTI15_10_IRQn 1 */

@@ -62,13 +62,14 @@ void Error_Handler(void);
 #define B1_EXTI_IRQn EXTI15_10_IRQn
 #define TempReading_Pin GPIO_PIN_0
 #define TempReading_GPIO_Port GPIOC
+#define TempSensorControl_Pin GPIO_PIN_1
+#define TempSensorControl_GPIO_Port GPIOC
 #define LD2_Pin GPIO_PIN_5
 #define LD2_GPIO_Port GPIOA
 #define HeatControl_Pin GPIO_PIN_2
 #define HeatControl_GPIO_Port GPIOD
 #define ButtonInput_Pin GPIO_PIN_3
 #define ButtonInput_GPIO_Port GPIOB
-#define ButtonInput_EXTI_IRQn EXTI3_IRQn
 #define Indicator_Pin GPIO_PIN_5
 #define Indicator_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
