@@ -3514,7 +3514,7 @@
     (property "Price" "0.0008" (at 41.91 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C101397" (at 41.91 45.72 0)
+    (property "LCSC" "C2960792" (at 41.91 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Extended" "1" (at 41.91 45.72 0)

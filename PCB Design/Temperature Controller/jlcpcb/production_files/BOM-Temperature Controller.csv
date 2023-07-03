@@ -1,0 +1,28 @@
+Comment,Designator,Footprint,LCSC
+CJ431,U2,SOT-23,C171428
+INA332,U1,VSSOP-8_3.0x3.0mm_P0.65mm,C181461
+PT100 Header Pins,"J1,J2,J3",2 Pin Male Header,C20079
+S8050_SMD,Q3,SOT-23,C2146
+1.1k,R7,R_0603_1608Metric,C22764
+1.2k,"R12,R6",R_0603_1608Metric,C22765
+Red,D2,D_0603_1608Metric,C2286
+27k,R5,R_0603_1608Metric,C22967
+3.3k,"R1,R2",R_0603_1608Metric,C22978
+10k,R8,R_0603_1608Metric,C25804
+91,R3,R_0603_1608Metric,C2960792
+SANYOU_SRD_Form_C,K1,Relay_SPDT_SANYOU_SRD_Series_Form_C,C35449
+Barrel_Jack,J5,DC Jack 5A,C388625
+Conn_01x03_Male,J8,TerminalBlock_Altech_AK300-3_P5.00mm,C72334
+1N5819,D1,D_SOD-123,C8598
+10u,C4,C_0603_1608Metric,C96446
+TestPoint,TP5,TestPoint_THTPad_D1.0mm_Drill0.5mm,
+TestPoint,TP9,TestPoint_Pad_D1.5mm,
+TestPoint,TP2,TestPoint_THTPad_D1.0mm_Drill0.5mm,
+TestPoint,TP7,TestPoint_THTPad_D1.0mm_Drill0.5mm,
+TestPoint,TP8,TestPoint_Pad_D1.5mm,
+TestPoint,TP6,TestPoint_THTPad_D1.0mm_Drill0.5mm,
+TestPoint,TP4,TestPoint_THTPad_D1.0mm_Drill0.5mm,
+TestPoint,TP1,TestPoint_THTPad_D1.0mm_Drill0.5mm,
+TestPoint,TP3,TestPoint_THTPad_D1.0mm_Drill0.5mm,
+Conn_01x19_Female,J7,PinSocket_1x19_P2.54mm_Vertical,
+Conn_01x19_Female,J6,PinSocket_1x19_P2.54mm_Vertical,

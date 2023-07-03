@@ -640,7 +640,7 @@
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Extended" "1")
-    (property "LCSC" "C101397")
+    (property "LCSC" "C2960792")
     (property "Populate" "1")
     (property "Price" "0.0008")
     (property "Sheetfile" "Temperature Controller.kicad_sch")
